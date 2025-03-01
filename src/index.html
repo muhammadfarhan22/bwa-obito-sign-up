@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="output.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="bg-white py-4">
+            <nav class="flex flex-row items-center lg:px-12" aria-label="Global">
+                <a href="#" class="flex items-center sm:ml-10 md:ml-8">
+                    <img class="h-8 w-auto" src="logo/logo-com.png" alt="" />
+                    <span class="font-bold mx-1 text-2xl">Obito</span>
+                </a>
+                <div class="navigate hidden md:flex lg:ml-20 ml-5">
+                    <a href="#" class="text-sm p-2 font-semibold text-gray-900">Home</a>
+                    <a href="#" class="text-sm p-2 hover:text-gray-400">Pricing</a>
+                    <a href="#" class="text-sm p-2 hover:text-gray-400">Features</a>
+                    <a href="#" class="text-sm p-2 hover:text-gray-400">Testimonials</a>
+                </div>
+
+                <div class="hidden md:flex ml-auto">
+                    <img class="h-5 w-auto self-center" src="logo/device-message.png" alt="" />
+                    <span class="border-r border-r-gray-300 px-1 h-6 self-center"></span>
+                    <button
+                        type="button"
+                        class="rounded-full bg-white border border-gray-300 px-3.5 py-2.5 ml-2 text-sm font-semibold text-gray-900 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                        Sign Up
+                    </button>
+                    <button
+                        type="button"
+                        class="rounded-full bg-button px-3.5 py-2.5 ml-2 text-sm font-semibold text-white hover:bg-teal-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                        My Account
+                    </button>
+                </div>
+
+                <!-- HAMBURGER -->
+                <div class="flex md:hidden">
+                    <button
+                        popovertarget="my-popover"
+                        type="button"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg
+                            class="size-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- HAMBURGER -->
+
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+                <div popover id="my-popover" class="lg:hidden" role=" dialog" aria-modal="true">
+                    <div class="fixed inset-0 z-50"></div>
+                    <div
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5 flex">
+                                <img class="h-8 w-auto" src="/logo/logo-com.png" alt="" />
+                                <span class="font-bold mx-1 text-2xl">Obito</span>
+                            </a>
+                            <button
+                                popovertarget="my-popover"
+                                type="button"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                                <span class="sr-only">Close menu</span>
+                                <svg
+                                    class="size-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-gray-500/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="#" class="block text-sm p-2 font-semibold text-gray-900">Home</a>
+                                    <a href="#" class="block text-sm p-2 hover:text-gray-400">Pricing</a>
+                                    <a href="#" class="block text-sm p-2 hover:text-gray-400">Features</a>
+                                    <a href="#" class="block text-sm p-2 hover:text-gray-400">Testimonials</a>
+                                </div>
+                                <div class="md:hidden flex py-6">
+                                    <img class="h-5 w-auto self-center" src="logo/device-message.png" alt="" />
+                                    <span class="border-r border-r-gray-300 px-1 h-6 self-center"></span>
+                                    <button
+                                        type="button"
+                                        class="rounded-full bg-white border border-gray-300 px-3.5 py-2.5 ml-2 text-sm font-semibold text-gray-900 hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                                        Sign Up
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="rounded-full bg-button px-3.5 py-2.5 ml-2 text-sm font-semibold text-white hover:bg-teal-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                                        My Account
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Background backdrop, show/hide based on slide-over state. -->
+                </div>
+            </nav>
+        </header>
+        <!-- Header -->
+
+        <!-- Hero -->
+        <div class="grid md:grid-cols-2 bg-gray-50">
+            <div class="form-group content-center justify-self-center m-10 h-9/10 w-3/4">
+                <form class="border bg-white border-gray-300 rounded-3xl p-8" action="">
+                    <h2 class="font-bold text-xl">Upgrade Your Skills</h2>
+                    <div class="mt-5 grid grid-cols-1 gap-x-6 gap-y-4">
+                        <!-- PHOTO -->
+                        <div class="photo-group flex items-center">
+                            <div class="photo">
+                                <img class="w-24 h-24 object-cover rounded-full" src="logo/Frame 115.png" alt="" />
+                            </div>
+                            <button
+                                type="submit"
+                                class="rounded-full bg-delete px-3.5 py-2.5 ml-4 text-sm font-semibold text-delete-text hover:bg-red-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                                DELETE PHOTO
+                            </button>
+                        </div>
+
+                        <!-- NAME -->
+                        <div class="name-group space-y-2">
+                            <label class="text-sm font-medium text-gray-700">Complete Name</label>
+                            <div class="flex mt-2 items-center rounded-full border border-gray-300 px-3 py-2 bg-white">
+                                <img src="logo/profile.png" alt="" />
+                                <input
+                                    type="text"
+                                    class="ml-2 w-full outline-none bg-transparent text-gray-900 font-semibold"
+                                    placeholder="Type your valid email address" />
+                            </div>
+                        </div>
+
+                        <!-- OCCUPATION -->
+                        <div class="occupation-group space-y-2">
+                            <label class="text-sm font-medium text-gray-700">Occupation</label>
+                            <div class="flex mt-2 items-center rounded-full border border-gray-300 px-3 py-2 bg-white">
+                                <img src="logo/briefcase.png" alt="" />
+                                <input
+                                    type="text"
+                                    class="ml-2 w-full outline-none bg-transparent text-black font-semibold"
+                                    placeholder="Programmer" />
+                            </div>
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="email-group space-y-2">
+                            <label class="text-sm font-medium text-gray-700">Email Address</label>
+                            <div class="flex mt-2 items-center rounded-full border border-gray-300 px-3 py-2 bg-white">
+                                <img src="logo/sms.png" alt="" />
+                                <input
+                                    type="text"
+                                    class="ml-2 w-full outline-none bg-transparent text-black font-semibold"
+                                    placeholder="Type your valid email address" />
+                            </div>
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="password-group space-y-2">
+                            <label class="text-sm font-medium text-gray-700">Password</label>
+                            <div class="flex mt-2 items-center rounded-full border border-gray-300 px-3 py-2 bg-white">
+                                <img src="logo/shield-security.png" alt="" />
+                                <input
+                                    type="password"
+                                    class="ml-2 w-full outline-none bg-transparent text-black font-semibold"
+                                    placeholder="Type your valid password" />
+                            </div>
+                        </div>
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="confirm-password-group space-y-2">
+                            <label class="text-sm font-medium text-gray-700">Confirm Password</label>
+                            <div class="flex mt-2 items-center rounded-full border border-gray-300 px-3 py-2 bg-white">
+                                <img src="logo/shield-security.png" alt="" />
+                                <input
+                                    type="password"
+                                    class="ml-2 w-full outline-none bg-transparent text-black font-semibold"
+                                    placeholder="Type your valid password" />
+                            </div>
+                        </div>
+
+                        <!-- BUTTON CREATE ACCOUNT -->
+                        <div class="confirm-password-group space-y-2 mt-2">
+                            <button
+                                type="button"
+                                class="rounded-full w-full bg-button px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-teal-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                                Create My Account
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- BACKGROUND -->
+            <div class="image">
+                <img class="h-full w-full bg-cover bg-center" src="logo/image.png" alt="" />
+            </div>
+        </div>
+        <!-- Hero -->
+    </body>
+</html>

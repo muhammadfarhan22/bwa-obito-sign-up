@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@theme {
+  --color-button: #2f6a62;
+  --color-delete: #ffe3e1;
+  --color-delete-text: #ef372b;
+}
